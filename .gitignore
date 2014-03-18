@@ -1,0 +1,6 @@
+.sass-cache
+.gitignore.swp
+Gemfile.lock
+.DS_Store
+.idea
+.vagrant

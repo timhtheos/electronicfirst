@@ -1,0 +1,39 @@
+// Floats
+@mixin float($var, $val) {
+  $valProperty: null;
+  @if $var == "float" {
+    $valProperty: $val;
+  } @else if $var == "clear" {
+    $valProperty: $var;
+  }
+  .#{$valProperty} {
+    #{$var}: $val;
+  }
+}
+
+// Margins
+@mixin margin($direction, $val) {
+  .margin-#{$direction} {
+    margin-#{$direction}: $val;
+  }
+}
+
+// Paddings
+@mixin padding($directionEtc, $val, $oneDirection: 1) {
+  .padding-#{$directionEtc} {
+    @if $oneDirection == 1 {
+      padding-#{$directionEtc}: $val;
+    } @else if $oneDirection == 0 {
+      padding: $val;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,473 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/**
+ * Font: Oxygen
+ * @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+ */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Oxygen Light"), local("Oxygen-Light"), url(../fonts/Oxygen/Oxygen-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oxygen"), local("Oxygen-Regular"), url(../fonts/Oxygen/Oxygen-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Oxygen Bold"), local("Oxygen-Bold"), url(../fonts/Oxygen/oxygen-Bold.woff) format("woff");
+}
+
+/**
+ * Body
+ */
+/* line 18, ../sass/screen.scss */
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/**
+ * Ebeezy Container
+ */
+/* line 29, ../sass/screen.scss */
+.ebeezy #container {
+  background: white;
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  border: 20px solid #dddddd;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 9, ../sass/_mixins.scss */
+.ebeezy .left {
+  float: left;
+}
+/* line 9, ../sass/_mixins.scss */
+.ebeezy .right {
+  float: right;
+}
+/* line 9, ../sass/_mixins.scss */
+.ebeezy .clear {
+  clear: both;
+}
+/* line 16, ../sass/_mixins.scss */
+.ebeezy .margin-top {
+  margin-top: 20px;
+}
+/* line 16, ../sass/_mixins.scss */
+.ebeezy .margin-bottom {
+  margin-bottom: 20px;
+}
+/* line 16, ../sass/_mixins.scss */
+.ebeezy .margin-left {
+  margin-left: 20px;
+}
+/* line 16, ../sass/_mixins.scss */
+.ebeezy .margin-right {
+  margin-right: 20px;
+}
+/* line 23, ../sass/_mixins.scss */
+.ebeezy .padding-top {
+  padding-top: 20px;
+}
+/* line 23, ../sass/_mixins.scss */
+.ebeezy .padding-bottom {
+  padding-bottom: 20px;
+}
+/* line 23, ../sass/_mixins.scss */
+.ebeezy .padding-left {
+  padding-left: 20px;
+}
+/* line 23, ../sass/_mixins.scss */
+.ebeezy .padding-right {
+  padding-right: 20px;
+}
+/* line 23, ../sass/_mixins.scss */
+.ebeezy .padding-5 {
+  padding: 5px;
+}
+/* line 23, ../sass/_mixins.scss */
+.ebeezy .padding-10 {
+  padding: 10px;
+}
+/* line 23, ../sass/_mixins.scss */
+.ebeezy .padding-20 {
+  padding: 20px;
+}
+/* line 61, ../sass/screen.scss */
+.ebeezy .spacer {
+  background: white;
+  height: 20px;
+}
+/* line 65, ../sass/screen.scss */
+.ebeezy .img {
+  border: none;
+}
+/* line 70, ../sass/screen.scss */
+.ebeezy #menu {
+  background: url(http://www.expresspoints.co.uk/Images/menu.png);
+  width: 960px;
+  height: 40px;
+}
+/* line 78, ../sass/screen.scss */
+.ebeezy #menu ul#top-menu, .ebeezy #menu ul#top-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 83, ../sass/screen.scss */
+.ebeezy #menu ul#top-menu li {
+  display: inline;
+  border-right: 1px solid #999999;
+  margin: 0;
+  padding: 0 10px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #ffffff;
+}
+/* line 93, ../sass/screen.scss */
+.ebeezy #menu ul#top-menu li.last {
+  display: inline;
+  border-right: none;
+  margin: 0;
+  padding: 0 10px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #ffffff;
+}
+/* line 103, ../sass/screen.scss */
+.ebeezy #menu ul#top-menu li a {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #cccccc;
+  text-decoration: none;
+}
+/* line 110, ../sass/screen.scss */
+.ebeezy #menu ul#top-menu li a:hover {
+  text-decoration: underline;
+}
+/* line 119, ../sass/screen.scss */
+.ebeezy #shadow {
+  background: white;
+  width: 960px;
+  min-height: 70px;
+}
+/* line 125, ../sass/screen.scss */
+.ebeezy #shadow .top-shadow {
+  background: url(http://www.expresspoints.co.uk/Images/top-shadow.png);
+  width: 960px;
+  height: 70px;
+}
+/* line 130, ../sass/screen.scss */
+.ebeezy #shadow .top-shadow .logo {
+  width: 160px;
+  height: 70px;
+}
+/* line 134, ../sass/screen.scss */
+.ebeezy #shadow .top-shadow .logo h3 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #999999;
+  margin: 0;
+  padding: 5px 0 10px 0;
+  letter-spacing: -1px;
+}
+/* line 144, ../sass/screen.scss */
+.ebeezy #shadow .top-shadow .sub-menu {
+  width: 800px;
+  height: 70px;
+  text-align: right;
+}
+/* line 149, ../sass/screen.scss */
+.ebeezy #shadow .top-shadow .button {
+  width: 100px;
+  height: 70px;
+  text-align: right;
+}
+/* line 157, ../sass/screen.scss */
+.ebeezy #shadow .bottom-shadow {
+  background: url(http://www.expresspoints.co.uk/Images/bottom-shadow.png) top no-repeat;
+  width: 960px;
+  height: 70px;
+}
+/* line 162, ../sass/screen.scss */
+.ebeezy #shadow .bottom-shadow p {
+  font: normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+/* line 174, ../sass/screen.scss */
+.ebeezy #shadow ul#sub-menu, .ebeezy #shadow ul#sub-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 179, ../sass/screen.scss */
+.ebeezy #shadow ul#sub-menu li {
+  display: inline;
+  border-right: 1px solid #cccccc;
+  margin: 0;
+  padding: 0 10px;
+}
+/* line 185, ../sass/screen.scss */
+.ebeezy #shadow ul#sub-menu li.last {
+  display: inline;
+  border-right: none;
+  margin: 0;
+  padding: 0 10px;
+}
+/* line 191, ../sass/screen.scss */
+.ebeezy #shadow ul#sub-menu li a {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #999999;
+  text-decoration: none;
+}
+/* line 198, ../sass/screen.scss */
+.ebeezy #shadow ul#sub-menu li a:hover {
+  text-decoration: underline;
+}
+/* line 207, ../sass/screen.scss */
+.ebeezy #content {
+  background: #ffffff;
+  width: 960px;
+}
+/* line 211, ../sass/screen.scss */
+.ebeezy #content .boxes h1 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 48px;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+}
+/* line 214, ../sass/screen.scss */
+.ebeezy #content .boxes h2 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #999999;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+/* line 217, ../sass/screen.scss */
+.ebeezy #content .boxes h3 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  color: #666666;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+/* line 220, ../sass/screen.scss */
+.ebeezy #content .boxes h4 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #999999;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+/* line 223, ../sass/screen.scss */
+.ebeezy #content .boxes h5 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+/* line 226, ../sass/screen.scss */
+.ebeezy #content .boxes p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #666666;
+  margin: 0;
+  padding: 0 0 10px 0;
+  line-height: 20px;
+}
+/* line 229, ../sass/screen.scss */
+.ebeezy #content .boxes a {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #3F87D6;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* line 232, ../sass/screen.scss */
+.ebeezy #content .boxes a:hover {
+  text-decoration: underline;
+}
+/* line 237, ../sass/screen.scss */
+.ebeezy #content .line {
+  background: #ffffff;
+  width: 960px;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 242, ../sass/screen.scss */
+.ebeezy #content .box-25 {
+  width: 225px;
+  min-height: 150px;
+}
+/* line 245, ../sass/screen.scss */
+.ebeezy #content .box-50 {
+  width: 470px;
+  min-height: 150px;
+}
+/* line 248, ../sass/screen.scss */
+.ebeezy #content .box-75 {
+  width: 715px;
+  min-height: 150px;
+}
+/* line 253, ../sass/screen.scss */
+.ebeezy #content .box-50-ribbon {
+  background: url(http://www.expresspoints.co.uk/Images/box-50-ribbon.png);
+  width: 470px;
+  height: 100px;
+}
+/* line 256, ../sass/screen.scss */
+.ebeezy #content .box-50-top {
+  background: url(http://www.expresspoints.co.uk/Images/box-50-top.png);
+  width: 470px;
+  height: 100px;
+}
+/* line 259, ../sass/screen.scss */
+.ebeezy #content .box-50-inner {
+  background: url(http://www.expresspoints.co.uk/Images/box-50-inner.png);
+  width: 470px;
+  min-height: 100px;
+}
+/* line 262, ../sass/screen.scss */
+.ebeezy #content .box-50-bottom {
+  background: url(http://www.expresspoints.co.uk/Images/box-50-bottom.png);
+  width: 470px;
+  height: 20px;
+}
+/* line 265, ../sass/screen.scss */
+.ebeezy #content .box-100 {
+  background: url(http://www.expresspoints.co.uk/Images/box-100.png) bottom no-repeat;
+  width: 960px;
+  min-height: 150px;
+}
+/* line 270, ../sass/screen.scss */
+.ebeezy #content .copyright {
+  width: 960px;
+}
+/* line 273, ../sass/screen.scss */
+.ebeezy #content .copyright p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #666666;
+  margin: 0;
+  padding: 0 0 2px 0;
+}
+/* line 276, ../sass/screen.scss */
+.ebeezy #content .copyright a {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #3F87D6;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* line 279, ../sass/screen.scss */
+.ebeezy #content .copyright a:hover {
+  text-decoration: underline;
+}
+/* line 286, ../sass/screen.scss */
+.ebeezy #content .sub-images {
+  background: #ffffff;
+}
+/* line 292, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs, .ebeezy #content .sub-images ul#thumbs li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 296, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs li {
+  float: left;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  margin-right: 10px;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 299, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs a {
+  float: left;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 100px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+/* line 302, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs a img {
+  float: left;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+}
+/* line 305, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs a:hover {
+  overflow: visible;
+  z-index: 1000;
+  border: none;
+}
+/* line 308, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs a:hover img {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 318, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs:after,
+.ebeezy #content .sub-images ul#thumbs li#thumbs:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 321, ../sass/screen.scss */
+.ebeezy #content .sub-images ul#thumbs li#thumbs {
+  display: block;
+  min-height: 1%;
+}
+/* line 330, ../sass/screen.scss */
+.ebeezy #content .sub-images * html ul#thumbs,
+.ebeezy #content .sub-images * html li#thumbs {
+  height: 1%;
+}

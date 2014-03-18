@@ -1,0 +1,335 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "rgbapng";
+@import "compass";
+@import "susy";
+
+// Import other sass files
+@import "variables";
+@import "mixins";
+@import "typography";
+
+/**
+ * Body
+ */
+body {
+  background: $color-white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/**
+ * Ebeezy Container
+ */
+.ebeezy {
+  #container {
+    background: $color-white; 
+    width: 960px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: left; 
+    border: 20px solid #dddddd; 
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+  }
+  
+  // floats
+  @include float(float, left);
+  @include float(float, right);
+  @include float(clear, both);
+    
+  // margins
+  @include margin(top, 20px);
+  @include margin(bottom, 20px);
+  @include margin(left, 20px);
+  @include margin(right, 20px);
+  
+  // padding
+  @include padding(top, 20px);
+  @include padding(bottom, 20px);
+  @include padding(left, 20px);
+  @include padding(right, 20px);
+  @include padding(5, 5px, 0);
+  @include padding(10, 10px, 0);
+  @include padding(20, 20px, 0);
+  
+  // misc
+  .spacer {
+    background: $color-white;
+    height: 20px;
+  }
+  .img {
+    border: none;
+  }
+  
+  // menu
+  #menu {
+    background: url(http://www.expresspoints.co.uk/Images/menu.png);
+    width: 960px;
+    height: 40px;
+    
+    // top menu
+    ul {
+      &#top-menu,
+      &#top-menu li {
+        margin: 0;
+	padding: 0;
+	list-style: none;
+      }
+      &#top-menu li {
+        display: inline;
+	border-right: 1px solid #999999;
+	margin: 0;
+	padding: 0 10px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	color: #ffffff;
+	
+	&.last {
+	  display: inline;
+	  border-right: none;
+	  margin: 0;
+	  padding: 0 10px;
+	  font-family: 'Oxygen', sans-serif;
+	  font-weight: normal;
+	  font-size: 12px;
+	  color: #ffffff;
+	}
+	a {
+	  font-family: 'Oxygen', sans-serif;
+	  font-weight: normal;
+	  font-size: 12px;
+	  color: #cccccc;
+	  text-decoration: none;
+	  
+	  &:hover {
+	    text-decoration: underline;
+	  }
+	}
+      }
+    }
+  }
+  
+  // shadow
+  #shadow {
+    background: $color-white;
+    width: 960px; 
+    min-height: 70px;
+    
+    // top shadow
+    .top-shadow {
+      background: url(http://www.expresspoints.co.uk/Images/top-shadow.png);
+      width: 960px;
+      height: 70px;
+    
+      .logo {
+        width: 160px;
+	height: 70px;
+      
+        h3 {
+	  font-family: 'Oxygen', sans-serif;
+	  font-weight: normal;
+	  font-size: 24px;
+	  color: #999999;
+	  margin: 0;
+	  padding: 5px 0 10px 0;
+	  letter-spacing: -1px;
+	}
+      }
+      .sub-menu {
+      	width: 800px;
+	height: 70px;
+	text-align: right;
+      }
+      .button {
+        width: 100px;
+	height: 70px;
+	text-align: right;
+      }
+    }
+    
+    // bottom shadow
+    .bottom-shadow {
+      background: url(http://www.expresspoints.co.uk/Images/bottom-shadow.png) top no-repeat;
+      width: 960px;
+      height: 70px;
+      
+      p {
+        font: normal 12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #666666;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+      }
+    }
+    
+    // sub menu list
+    ul {
+      &#sub-menu,
+      &#sub-menu li {
+        margin: 0; 
+        padding: 0; 
+        list-style: none;
+      }
+      &#sub-menu li {
+        display: inline;
+        border-right: 1px solid #cccccc;
+        margin: 0;
+        padding: 0 10px;
+        
+        &.last {
+          display: inline;
+          border-right: none;
+          margin: 0;
+          padding: 0 10px;
+        }
+        a {
+          font-family: 'Oxygen', sans-serif;
+          font-weight: normal;
+          font-size: 14px;
+          color: #999999;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  // content 
+  #content {
+    background: #ffffff; width: 960px;
+
+    .boxes {
+      h1 {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 48px; color: #666666; margin: 0; padding: 0;
+      }
+      h2 {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 24px; color: #999999; margin: 0; padding: 0 0 10px 0;
+      }
+      h3 {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 24px; color: #666666; margin: 0; padding: 0 0 10px 0;
+      }
+      h4 {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 18px; color: #999999; margin: 0; padding: 0 0 10px 0;
+      }
+      h5 {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 18px; color: #666666; margin: 0; padding: 0 0 10px 0;
+      }
+      p {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 12px; color: #666666; margin: 0; padding: 0 0 10px 0; line-height: 20px;
+      }
+      a {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 12px; color: #3F87D6; margin: 0; padding: 0; text-decoration: none;
+      
+        &:hover {
+	  text-decoration: underline;
+        }
+      }
+    }
+    .line {
+      background: #ffffff; width: 960px; border-bottom: 1px solid #cccccc;
+    }
+    
+    // box variants
+    .box-25 {
+      width: 225px; min-height: 150px;
+    }
+    .box-50 {
+      width: 470px; min-height: 150px;
+    }
+    .box-75 {
+      width: 715px; min-height: 150px;
+    }
+    
+    // box images
+    .box-50-ribbon {
+      background: url(http://www.expresspoints.co.uk/Images/box-50-ribbon.png); width: 470px; height: 100px;
+    }
+    .box-50-top {
+      background: url(http://www.expresspoints.co.uk/Images/box-50-top.png); width: 470px; height: 100px;
+    }
+    .box-50-inner {
+      background: url(http://www.expresspoints.co.uk/Images/box-50-inner.png); width: 470px; min-height: 100px;
+    }
+    .box-50-bottom {
+      background: url(http://www.expresspoints.co.uk/Images/box-50-bottom.png); width: 470px; height: 20px;
+    }
+    .box-100 {
+      background: url(http://www.expresspoints.co.uk/Images/box-100.png) bottom no-repeat; width: 960px; min-height: 150px;
+    }
+    
+    // copyright
+    .copyright {
+      width: 960px;
+      
+      p {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 12px; color: #666666; margin: 0; padding: 0 0 2px 0;
+      }
+      a {
+        font-family: 'Oxygen', sans-serif; font-weight: normal; font-size: 12px; color: #3F87D6; margin: 0; padding: 0; text-decoration: none;
+	
+	&:hover {
+	  text-decoration: underline;
+	}
+      }
+    }
+    
+    // sub images
+    .sub-images {
+      background: #ffffff;
+      
+      // thumb list
+      ul {
+        &#thumbs,
+	&#thumbs li {
+	  margin: 0; padding: 0; list-style: none;
+	}
+	&#thumbs {
+	  li {
+	    float:left; background: #ffffff; border: 1px solid #cccccc; margin-right: 10px; padding: 10px; -moz-border-radius: 10px; border-radius: 10px;
+	  }
+	  a {
+	    float: left; display: block; width: 60px; height: 60px; line-height: 100px; overflow: hidden; position: relative; z-index: 1;
+	    
+	    img {
+	      float: left; position: absolute; top: -20px; left: -50px;
+	    }
+	    &:hover {
+	      overflow: visible; z-index: 1000; border: none;
+	      
+	      img {
+	        background: #ffffff; border: 1px solid #cccccc; padding: 10px; -moz-border-radius: 10px; border-radius: 10px;
+	      }
+	    }
+	  }
+	}
+	
+        // clearing floats
+	&#thumbs {
+	  &:after,
+          li#thumbs:after {
+	    content: "."; display: block; height: 0; clear: both; visibility: hidden;
+	  }
+	  li#thumbs {
+	    display: block;
+	    min-height: 1%;
+	  }
+	}
+      }
+      
+      // clearing floats #2
+      * html ul#thumbs,
+      * html li#thumbs {
+        height: 1%;
+      }
+    }
+  }
+}
